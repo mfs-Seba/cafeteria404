@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #fdfaf6;
+  color: #3d2c1e;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* las imagenes que no se desborden */
+img {
+  max-width: 100%;
+}
