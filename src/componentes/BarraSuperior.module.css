@@ -1,0 +1,80 @@
+.barra {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: #ffffff;
+    border-bottom: 2px solid #e8d5b7;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.icono {
+    font-size: 24px;
+}
+
+.nombre {
+    font-weight: 600;
+    font-size: 18px;
+    color: #6f4e37;
+}
+
+.botones {
+    display: flex;
+    gap: 10px;
+}
+
+.btnSecundario {
+    background-color: white;
+    border: 1px solid #d4a373;
+    color: #6f4e37;
+    padding: 8px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+}
+
+.btnSecundario:hover {
+    background-color: #f5e6d3;
+}
+
+.btnPrimario {
+    background-color: #6f4e37;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    border: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+.btnPrimario:hover {
+    background-color: #543820;
+}
+
+/* responsivo */
+@media (max-width: 600px) {
+    .barra {
+        padding: 12px 15px;
+    }
+    .nombre {
+        font-size: 15px;
+    }
+    .btnSecundario {
+        display: none;
+    }
+    .btnPrimario {
+        font-size: 12px;
+        padding: 6px 12px;
+    }
+}
