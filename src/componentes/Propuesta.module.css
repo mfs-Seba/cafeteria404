@@ -1,0 +1,73 @@
+.propuesta {
+    display: flex;
+    gap: 30px;
+    padding: 40px 30px;
+    background-color: #d4edda;
+    align-items: center;
+    justify-content: center;
+}
+
+.texto {
+    flex: 1;
+    max-width: 400px;
+}
+
+.titulo {
+    font-family: 'Pacifico', cursive;
+    font-size: 24px;
+    color: #2d5016;
+    margin-bottom: 12px;
+    font-weight: normal;
+}
+
+.descripcion {
+    color: #3d2c1e;
+    font-size: 14px;
+    line-height: 1.7;
+    margin-bottom: 15px;
+}
+
+.estrellas {
+    display: flex;
+    gap: 4px;
+}
+
+.estrella {
+    font-size: 20px;
+    /* aca aplico animacion con transform al pasar el mouse */
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.estrella:hover {
+    transform: scale(1.3) rotate(15deg);
+}
+
+.imagen {
+    flex: 1;
+    max-width: 350px;
+    background-color: #d9d9d9;
+    border-radius: 8px;
+    overflow: hidden;
+    aspect-ratio: 4 / 3;
+    border: 1px solid #b0b0b0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.imagen img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media (max-width: 768px) {
+    .propuesta {
+        flex-direction: column;
+        padding: 25px 20px;
+    }
+    .texto, .imagen {
+        max-width: 100%;
+        width: 100%;
+    }
+}
