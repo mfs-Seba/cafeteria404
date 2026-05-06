@@ -1,0 +1,51 @@
+.pie {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 30px;
+    background-color: #d4edda;
+    border-top: 1px solid #b5d6bc;
+    margin-top: 20px;
+}
+
+.iconos {
+    display: flex;
+    gap: 12px;
+}
+
+.icono {
+    color: #6f4e37;
+    cursor: pointer;
+    transition: transform 0.2s;
+    display: flex;
+    align-items: center;
+}
+
+.icono:hover {
+    transform: scale(1.2);
+    color: #543820;
+}
+
+.texto {
+    font-size: 13px;
+    color: #3d2c1e;
+}
+
+.enlace {
+    color: #1976d2;
+    font-size: 13px;
+    text-decoration: underline;
+}
+
+.enlace:hover {
+    color: #0d47a1;
+}
+
+@media (max-width: 600px) {
+    .pie {
+        flex-direction: column;
+        gap: 10px;
+        padding: 15px;
+        text-align: center;
+    }
+}
