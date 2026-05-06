@@ -1,0 +1,30 @@
+.contenido {
+    min-height: calc(100vh - 150px);
+}
+
+.equipo {
+    padding: 30px 20px;
+    text-align: center;
+}
+
+.tituloEquipo {
+    font-family: 'Pacifico', cursive;
+    color: #6f4e37;
+    font-size: 24px;
+    margin-bottom: 25px;
+    font-weight: normal;
+}
+
+.tarjetas {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+    .tarjetas {
+        flex-direction: column;
+        align-items: center;
+    }
+}
